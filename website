@@ -249,6 +249,11 @@
     $(document).ready(function() {
       $('#navbar').localScroll({duration:800});
     });
+    
+    $(document).ready(function() {
+      $('#myCarousel').localScroll({duration:800});
+    });
+    
     </script>
   
   </body>
