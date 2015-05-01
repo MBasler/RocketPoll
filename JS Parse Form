@@ -1,0 +1,32 @@
+ ;(function ($, window, undefined) {})(jQuery, this);
+ Parse.initialize("xxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxx");
+   
+
+   $(document).ready(function() {
+  
+         $("#form").submit(function(e) {
+            e.preventDefault();
+            submitForm();
+         })
+
+      })
+
+   function submitForm() {
+
+      var Submit = Parse.Object.extend("Submit")
+      var submit = new Submit();
+
+      var email = $("#email").val();
+
+      submit.set("email", email);
+
+      submit.save(null, {
+         success: function() {
+            console.log("saved!");
+         },
+         error: function(email, error) {
+            console.log(error.message);
+         }
+      })
+
+   }
