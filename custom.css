@@ -1,8 +1,21 @@
+/* NAVBAR
+-------------------------------------------------- */
+
 .navbar-brand {
 	font: 400 130px/1 'Cookie', Helvetica, sans-serif;
 	color: #fff;
 	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
-	font-size: 1.9em;
+	font-size:1.9em;
+	padding: 15px 15px;
+	margin-left: -6%;
+}
+
+.navbar.navbar-fixed-top {
+	width: 80%;
+	height:50px;
+	margin: 0 auto;
+	z-index: 1000;
+	border-width: 0 0 1px;
 }
 
 #logoNav {
@@ -11,6 +24,14 @@
 	margin-top: -4px;
 	margin-right: 10px;
 }
+
+#navCollapse {
+	margin-right: -2%;
+}
+
+/* CAROUSEL
+-------------------------------------------------- */
+
 
 #logo {
 	height:250px;
@@ -31,21 +52,63 @@
 	margin-left:-7%;
 }
 
-#1respond-content {
+#respond-content {
 	margin-top:11%;
-	margin-left:-7%;
 }
 
+/* MEET THE TEAM
+-------------------------------------------------- */
 
 #meet {
 	text-align: center;
 	margin-bottom: 3%;
 }
 
-.navbar.navbar-fixed-top {
-	width: 80%;
-	height:50px;
+/* ABOUT
+-------------------------------------------------- */
+
+.featurette-image {
 	margin: 0 auto;
-	z-index: 1000;
-	border-width: 0 0 1px;
+}
+
+/* SIGN UP FORM
+-------------------------------------------------- */
+
+#form {
+	position:relative;
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+.form-group	{
+	margin-top: 5%;	
+}
+
+.form-control {
+	width:400px;
+	max-width: 100%;
+}
+
+
+
+#signUp {
+	width: 60%;
+	margin: 60px auto 0;
+}
+
+footer {
+	margin-top: 75px;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:focus, a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#askText {
+	margin-top: -3%;
 }
